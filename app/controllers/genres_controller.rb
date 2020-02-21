@@ -28,7 +28,6 @@ class GenresController < ApplicationController
     redirect_to genre_path(@genre)
   end
 
-
   private
   def genre_params
     params.require(:genres).permit(:name)
